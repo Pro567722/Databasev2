@@ -1,0 +1,278 @@
+<html>
+    <head>
+      <title>Site-91 Security Database. Authorized Personnel Only.</title>
+      <link rel="icon" href="SCP-cube.jpg">
+      <link rel="stylesheet" href="Main.css">
+     </head>
+    <body onload="SCP(), Repeater()">
+      <h3 id="Date"> Getting Local Date & Time...  </h3>
+      <script>
+        // WELCOME to the open-source version of the Site-91 SCP database!
+        console.log("Trying To Connect to Server...")
+        document.getElementById('vis').style.display = 'none'
+        document.getElementById('testing').style.display = 'none'
+        document.getElementById('xtra').style.display = 'none'
+        document.getElementById('DisplayFunc').style.display = 'none'
+      </script>
+      <script>
+function SCP() {
+          // Function that sends tries to receive data from the database and saying so in console,
+          // as well as execute nessecary functions such as OFFLINE(), Loader() and SCP2().
+          setTimeout(SCP2,3000)
+        console.log("©️ Copyright 2000-2024, SCP Foundation Website.")
+        console.warn("BYPASSING VERIFICATION THROUGH THE DEV CONSOLE IS STRICTLY FORBIDDEN.")
+        console.log("Site-91 SCP Database. Version 1.8.7")
+        console.log("Getting System Data, please wait.")
+        console.log("Getting System Data, please wait.")
+        console.log("Getting System Data, please wait.")
+        document.getElementById('vis').style.display = 'none'
+        document.getElementById('testing').style.display = 'none'
+        document.getElementById('xtra').style.display = 'none'
+        document.getElementById('DisplayFunc').style.display = 'none'
+        setTimeout(OFFLINE, 10)
+        setTimeout(SCP2,2000)
+  
+}
+function SCP2() {
+          // Function that displays Site & Website Status if the client is connected to a network,
+      if (navigator.onLine === true) {
+          document.getElementById("statusHeader").innerHTML = " Status [All Clear]:"
+          document.getElementById("SiteStatus").innerHTML = "Status: All Systems Operational."
+          document.getElementById("websiteStatus").innerHTML = "Website Status: Server Efficiency at Max."
+} else {
+  console.log
+}
+}
+function OFFLINE() {
+          // Function that logs into the console weather a connection was able to be established (aka connected to a network),
+          // also makes Site Status say some lines that indicates it wasn't able to connect.
+  if (navigator.onLine === true) {
+    console.info("Connection Established!");
+    Loader()
+  } else {
+    
+    console.error("Couldn't connect to server, check your Internet Settings or contact your Server Operator. This may also be caused by server-side issues.");
+    document.getElementById('vis').innerHTML = "Failed to Connect with Server."
+    document.getElementById("statusHeader").innerHTML = " Status [Fail_Connect]:"
+          document.getElementById("SiteStatus").innerHTML = "Failed to Connect with Server."
+          document.getElementById("websiteStatus").innerHTML = "Failed to Connect with Server."
+          document.getElementById("SiteStatus").innerHTML = "Failed to Connect with Server."
+          document.getElementById("websiteStatus").innerHTML = "Failed to Connect with Server."
+        document.getElementById('testing').style.display = 'none'
+        document.getElementById('DisplayFunc').innerHTML = "Failed to Connect with Server."
+
+        document.getElementById('announcement').innerHTML = "Failed to Connect with Server."
+        document.getElementById('a').innerHTML = "Failed to Connect with Server."
+        document.getElementById('Verify').innerHTML = "Failed to Connect with Server."
+        document.getElementById('vis').innerHTML = "Failed to Connect with Server."
+        document.getElementById('DisplayFunc').innerHTML = "Failed to Connect with Server."
+}
+}
+function Loader() {
+          // Function that executes upon a connection being establsihed,
+          // logs following into console.
+        console.info("Registered Clearance Level in your device (#SYSTEM_4672) is lower than required level to access to this page.")
+        console.info("Your Clearance Level returned as 2, while required Clearance Level to access the database is, at testing phase, 5")
+        console.info("________________________________________________________")
+        console.info("__SCP FOUNDATION________________________________________")
+        console.info("_________________________________SITE-91________________")
+        console.info("________________________________________________________")
+        console.info("_________________SECURITY DATABASE______________________")
+        console.info("________________________________________________________")
+        console.info("___________________ENCRYPTED SERVER_____________________")
+        console.info("___CLIENT LOADED________________________________________")
+        console.info("________________________________________________________")
+        console.info("Connection established at:")
+        console.info(Date())
+}
+</script>
+       <marquee class="marquee" behaviour="scroll" direction="left"> Registered Clearance Level in your device (#SYSTEM_4672) is lower than required level to access to this page. Please Contact your Supervisor or Site Director for temporary access. </marquee>
+<h1 class="HEADER">Security Department Database</h1>
+<h2 class="ANNOUNCEMENT">Announcements:</h2>
+ <h3 id="announcement" class="ANNOUNCEMENT"> Updating Database...</h3>
+      <h3> Please Contact your Supervisor or Site Director for temporary access.</h3>
+      <details> OFFICAL SCP FOUNDATION WEBSITE, FOR SCP PERSONNEL ONLY.
+        <hr>
+        ID: Site_91.database
+      </details>
+      <div class="button ADMINerror">
+        <h3 id="statusHeader">Status [Connecting to Server...]:</h3>   
+        <p id="SiteStatus"><strong>Status:</strong> Connecting to Server...</p>
+        <p id="websiteStatus"><strong>Website Status:</strong> Checking Status...</p>
+      </div>
+      <button class="button DEPT" id="a" onclick="ChangeDB()">View Available Sub-Departmental Databases</button>
+      <button class="button DEBUG" id="Verify" onclick="GrantAccess()">DEBUG MODE ACTIVE, CLICK TO GAIN CLEARANCE 5 FOR THIS SESSION ONLY!</button>
+    <div id="vis">
+      <details>
+        <summary> Security Department Overseer </summary>
+        <h2> John F Kennedy </h2>
+        <h4> DESCRIPTION: Security Department member for longer than 20 years, shown dedicated courage and passion towards the Security Department</h4>
+        <h5> PERSONAL INFO:
+          <br>
+          Born 20th June 19XX
+        </h5>
+      </details>
+<button class="button ADMIN" onclick="Admin()">Administrator Access</button>
+<div id="xtra">
+ <h1 alignment="middle">Aᴅᴍɪɴɪsᴛʀᴀᴛᴏʀ Aᴄcᴇss</h1>
+ <details> 
+   <summary> Administrative Tools </summary>
+   <br>
+   <details>
+    <summary> Editior </summary>
+    <button class="button ADMIN" onclick="EditDB()"> Edit Database</button>
+   </details>
+   <details>
+    <summary> Permissions Editior </summary>
+    <button class="button ADMIN" onclick="EditPE()"> Edit Permissions</button>
+    </details>
+    <details>
+      <summary> Debugger </summary>
+      <button class="button ADMIN" onclick="DisplayFunctions()">Display Functions</button>
+      <div id="DisplayFunc">
+        <button class="button ADMIN" onclick="Exe()">ServerAPI Error</button>
+        <button class="button ADMIN" onclick="GrantAccess()">Debug Mode</button>
+        <button class="button ADMIN" onclick="Admin()">Administrator Access</button>
+        <button class="button ADMIN" onclick="EditDB()">DebuggingTools</button>
+        <button class="button ADMIN" onclick="ChangeDB()">Redirect to Departmental Selection Site</button>
+        <button class="button ADMIN" onclick="AccAct()">Unauthorized System Alert</button>
+      </div>
+     </details>
+ </details>
+</div>
+   <hr>
+     <hr>
+    </div> 
+    <div>
+     <script>
+      function IsOffline() {
+          // Checks weather the client is Offline,
+          // as well as execute nessecary functions such as OFFLINE(), Loader() and SCP2().
+  document.getElementById("statusHeader").innerHTML = " Status [Connecting to Server...]:"
+          document.getElementById("SiteStatus").innerHTML = "Status: Connecting to Server..."
+          document.getElementById("websiteStatus").innerHTML = "Website Status: Checking Status..."
+  document.getElementById('vis').style.display = 'none'
+        document.getElementById('testing').style.display = 'none'
+        document.getElementById('xtra').style.display = 'none'
+        document.getElementById('DisplayFunc').style.display = 'none'
+
+        document.getElementById('announcement').style.display = 'none'
+        document.getElementById('a').style.display = 'none'
+        document.getElementById('Verify').style.display = 'none'
+        document.getElementById('vis').style.display = 'none'
+        document.getElementById('xtra').style.display = 'none'
+        document.getElementById('DisplayFunc').style.display = 'none'
+}
+function HideBasic() {
+          // Function that hides the default divs and elements.
+  document.getElementById('vis').style.display = 'none'
+        document.getElementById('testing').style.display = 'none'
+        document.getElementById('xtra').style.display = 'none'
+        document.getElementById('DisplayFunc').style.display = 'none'
+}
+function Repeater() {
+  setInterval(Time, 2000)
+}
+function Time() {
+  let i = Date()
+          // Function that displays the current date & time of the Client.
+  document.getElementById("Date").innerHTML = i
+}
+        function GrantAccess() {
+          // Grant Clearance level 5 for debugging purposes, resets after refreshing the client,
+          // USE ONLY FOR DEBUGGING, DO NOT ABUSE THIS.
+  if (confirm("Grant Level 5 Clearance for this session only?") == true) {
+    console.info("OK, Updating Servers");
+    alert("You're clearance for this session has been set as 5.")
+    HideBasic()
+    Verify()
+  } else {
+    console.info("NO, no action will be taken.");
+  }
+ }
+    function Exe() {
+          // Function that executes when there was a problem connecting to the Server, ServerAPI,
+          // only displays if the client is Online.
+      alert("There was an error and the server couldn't process your request.")
+      console.warn("ServerAPI error. Contact Website Administrators.")
+      
+    }
+    function AccAct() {
+          // Function that executes if a unauthorized system was detected,
+          // also logs System IP address as well as HWID.
+      alert("Unauthorized System detected. Contact your Site Director or Website Administrators for help.")
+      alert("DetectionSystemOverride was not enabled")
+      alert("The System IP, aswell as ID have been logged.")
+      console.warn("Unauthorized System. Contact Site Director or Website Administrators.")
+      
+    }
+
+    function Verify() {
+          // backend function for GrantAccess().
+    var x = document.getElementById('vis');
+    if (x.style.display === 'none') {
+    x.style.display = 'block';
+    } else {
+      x.style.display= "none";
+    }
+  }
+    function Admin() {
+        // Function that toggles 'Administrator Tools' section.
+    var x = document.getElementById('xtra');
+    if (x.style.display === 'none') {
+    x.style.display = 'block';
+    } else {
+      x.style.display= "none";
+    }
+    alert("Administrator Access Enabled.")
+  }
+  function EditDB() {
+       // Function that enables Debugging/Editing Tools.
+  if (confirm("Enable Debugging/Editing Tools? This cannot be reverted unless the page is refreshed.") == true) {
+    console.info("OK, enabling debugging/editing tools.");
+  } else {
+    console.info("NO, no action will be taken.");
+  }
+ }
+  function ChangeDB() {
+      // Function that redirects the Client to the Departmental Selection Site.
+  if (confirm("Redirect to Department Selection Site?") == true) {
+    console.info("OK, redirecting to site.");
+    location.replace("SIte-91 SCP Change Database.html");
+  } else {
+    console.info("NO, no action will be taken.");
+  }
+ }
+ function DisplayFunctions() {
+    // Function that displays all important and non-important functions, for debugging.
+  var x = document.getElementById('DisplayFunc');
+    if (x.style.display === 'none') {
+    x.style.display = 'block';
+    } else {
+      x.style.display= "none";
+    }
+    alert("All available functions will now display/undisplay.")
+    }
+  function Encryption() {
+  }
+  </script>
+  </div>
+ <script>
+        // Script to run upon the site loading //
+        // console.warn("Encryption Key not found! You're system is at risk.")
+  </script>
+    <div id="copyright">
+      CCA Copyright Act. 2024
+    </div>
+    <h3 style="color: red;">Sɪᴛᴇ-91 Oғғɪᴄɪᴀʟ Dᴀᴛᴀʙᴀsᴇ Wᴇʙsɪᴛᴇ.</h3>
+   <div id="testing">
+      <h1> Hello!</h1>
+      <h2> Hello!</h2>
+      <h3> Hello!</h3>
+      <h4> Hello!</h4>
+      <h5> Hello!</h5>
+      <h6> Hello!</h6>
+      <textarea> TESTING </textarea>
+     </div>
+    </body>
+  </html>
